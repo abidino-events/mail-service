@@ -12,8 +12,8 @@ record Controller(MailService mailService) {
         mailService.send(mailDto);
     }
 
-    @GetMapping
+    @GetMapping("/health")
     String test() {
-        return "check";
+        return "good";
     }
 }

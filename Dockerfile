@@ -1,4 +1,4 @@
-FROM eclipse-temurin:18.0.2.1_1-jdk-focal as builder
+FROM eclipse-temurin:19_36-jdk-focal as builder
 RUN mkdir -p /app/source
 COPY . /app/source
 WORKDIR /app/source

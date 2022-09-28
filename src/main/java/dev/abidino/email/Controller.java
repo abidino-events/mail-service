@@ -10,8 +10,8 @@ record Controller(MailService mailService) {
     @PostMapping("/send")
     void sendMail(@RequestBody @Valid MailDto mailDto) {
         mailService.send(mailDto);
-    }
 
+    }
     @GetMapping("/health")
     String test() {
         return "good";

@@ -16,8 +16,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://accounts.google.com
-          jwk-set-uri: https://accounts.google.com/.well-known/openid-configuration
+          issuer-uri: http://localhost:8080/realms/event
 
 server:
   port: 8082

@@ -2,6 +2,7 @@ package dev.abidino.email;
 
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 @RestController
@@ -13,7 +14,7 @@ record Controller(MailService mailService) {
 
     }
     @GetMapping("/health")
-    String test() {
+    String test(HttpServletRequest httpServletRequest) {
         return "good";
     }
 }

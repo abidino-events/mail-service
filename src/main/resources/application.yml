@@ -16,7 +16,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9000/realms/event
+          issuer-uri: ${ISSUER_URI}
 
 server:
   port: 8082
@@ -24,9 +24,5 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-logging:
-  level:
-    org:
-      springframework:
-        security: debug
+      defaultZone: ${DISCOVERY_CLIENT_URI}
+

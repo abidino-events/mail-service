@@ -1,5 +1,6 @@
 package dev.abidino.email;
 
+import dev.abidino.email.config.SpringContext;
 import dev.abidino.email.exception.BadRequestException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;

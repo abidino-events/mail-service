@@ -1,11 +1,11 @@
-package dev.abidino.email;
+package dev.abidino.email.config;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 @Component
-class SpringContext implements ApplicationContextAware {
+public class SpringContext implements ApplicationContextAware {
 
     private static ApplicationContext context;
 
